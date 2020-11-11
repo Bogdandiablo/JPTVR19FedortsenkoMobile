@@ -4,7 +4,7 @@ import entity.Customer;
 import entity.User;
 import java.util.List;
 import java.util.Scanner;
-import JPTVR19FedortsenkoLaptops.App;
+import JPTVR19FedortsenkoMobile.App;
 import tools.CustomerManager;
 import tools.StorageManager;
 import tools.UserManager;

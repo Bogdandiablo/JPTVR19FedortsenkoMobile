@@ -1,4 +1,4 @@
-package JPTVR19FedortsenkoLaptops;
+package JPTVR19FedortsenkoMobile;
 
 import tools.CustomerManager;
 import entity.Customer;
@@ -47,7 +47,7 @@ public class App {
     }
     
     public void run() {
-        System.out.println(" === Добро пожаловать в Laptops Shop! === ");
+        System.out.println(" === Добро пожаловать в Mobile Shop! === ");
         SecManager secManager = new SecManager();
         App.loggedInUser = secManager.checkInlogin(listUsers, listCustomers);
         UserInterface userInterface = new UserInterface();

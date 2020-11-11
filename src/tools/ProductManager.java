@@ -3,17 +3,17 @@ package tools;
 import entity.Product;
 import java.util.List;
 import java.util.Scanner;
-import JPTVR19FedortsenkoLaptops.App;
+import JPTVR19FedortsenkoMobile.App;
 
 public class ProductManager {
     public Product createProduct(){
         Product product = new Product();
-        System.out.printf("Название ноутбука: ");
+        System.out.printf("Название телефона: ");
         Scanner scan = new Scanner(System.in);
         product.setName(scan.nextLine());
         double numPrice;
         do {            
-            System.out.printf("Стоимость ноутбука: ");
+            System.out.printf("Стоимость телефона: ");
             String strPrice = scan.nextLine();
             try {
                 numPrice = Double.parseDouble(strPrice);
@@ -33,7 +33,7 @@ public class ProductManager {
     }
     public boolean printListProducts(List<Product> listProducts){
         if(listProducts == null || listProducts.size() < 1){
-            System.out.println("Нет в наличии ноутбука.");
+            System.out.println("Нет в наличии телефона.");
             return false;
         }
         int n = 0;

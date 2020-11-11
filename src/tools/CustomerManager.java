@@ -3,7 +3,7 @@ package tools;
 import entity.Customer;
 import java.util.List;
 import java.util.Scanner;
-import JPTVR19FedortsenkoLaptops.App;
+import JPTVR19FedortsenkoMobile.App;
 
 public class CustomerManager {
     public Customer createCustomer(){

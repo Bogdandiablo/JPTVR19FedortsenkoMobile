@@ -7,7 +7,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Scanner;
-import JPTVR19FedortsenkoLaptops.App;
+import JPTVR19FedortsenkoMobile.App;
 import security.SecManager;
 
 public class PurchaseManager {
@@ -17,18 +17,18 @@ public class PurchaseManager {
     private StorageManager storageManager = new StorageManager();
     
     public void makeDeal(List<Customer> listCustomers, List<Product> listProducts, List<Purchase> listPurchases){
-        System.out.println(" ===== СПИСОК ноутбуков ===== ");
+        System.out.println(" ===== СПИСОК телефонов ===== ");
         int productNum;
         do {            
             if(!productManager.printListProducts(listProducts)){
             return;
             }
-            System.out.printf("Выберите номер ноутбука: ");
+            System.out.printf("Выберите номер телефона: ");
                 String productNumStr = scan.nextLine();
             try {
                 productNum = Integer.parseInt(productNumStr);
                 if(productNum < 1 && productNum >= listProducts.size()){
-                    throw new Exception("Выход за диапазон доступных ноутбуков");
+                    throw new Exception("Выход за диапазон доступных телефонов");
                 }
                 break;
             } catch (Exception e) {

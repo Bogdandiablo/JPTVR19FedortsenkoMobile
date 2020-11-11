@@ -23,12 +23,12 @@ public class UserInterface {
         do {            
             System.out.println("=============================================");
             System.out.println("Список операций: ");
-            System.out.println("0. Покинуть LaptopShop");
-            System.out.println("1. Добавить ноутбук");
-            System.out.println("2. Просмотреть список ноутбуков");
+            System.out.println("0. Покинуть Mobile Shop");
+            System.out.println("1. Добавить телефон");
+            System.out.println("2. Просмотреть список телефонов");
             System.out.println("3. Добавить покупателя");
             System.out.println("4. Просмотреть список покупателей");
-            System.out.println("5. Купить ноутбук");
+            System.out.println("5. Купить телефон");
             System.out.println("6. Просмотреть список покупок");
             System.out.println("=============================================");
             System.out.printf("Выберите номер операции: ");
@@ -75,8 +75,8 @@ public class UserInterface {
             System.out.println("=============================================");
             System.out.println("Список операций: ");
             System.out.println("0. Покинуть магазин");
-            System.out.println("1. Просмотреть список ноутбуков");
-            System.out.println("2. Купить ноутбук");
+            System.out.println("1. Просмотреть список телефонов");
+            System.out.println("2. Купить телефон");
             System.out.println("3. Просмотреть журнал покупок");
             System.out.println("4. Просмотреть список покупателей");
             System.out.println("=============================================");
@@ -84,7 +84,7 @@ public class UserInterface {
             String var = scan.nextLine();
             switch (var) {
                 case "0":
-                    System.out.println(" ===== ВЫХОД ИЗ Laptops Shop ===== ");
+                    System.out.println(" ===== ВЫХОД ИЗ Mobile Shop ===== ");
                     repeat = false;
                     break;
                 case "1":
